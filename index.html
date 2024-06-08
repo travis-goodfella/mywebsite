@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travis G | About Me</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<!------------- nav --------------->
+<div class="container">
+	<div class="nav">
+		<a href="index.html">Home</a>
+		<a href="about.html">About Me</a>
+		<a href="projects.html">Projects</a>			
+	</div>
+</div>	
+<hr>
+<!------------- home ------------>
+<div class="row">
+	<div class="home-col-1">
+		<div class="container">
+		<img src="images/logo.jpg" alt="Image Error">
+			<div class="header-text">
+				<p>Cyber Security Analyst</p>
+				<h1>Hi, I'm <span>Travis G.</span><br>From Minnesota</h1>
+			</div>
+		</div>
+	</div>
+	<div class="home-col-2">
+		<div class="intro-container">
+			<p>You can find information about me and my projects by clicking the links at the top right of the page, I will update the site with new content as I gain more skills and experience. Thank you for visiting!</p><br>
+			<p class="signature">Best regards,<br>Travis G.</p>
+		</div>
+	</div>
+</div>
+
+
+<!---------------------------contact----------------------------->
+<footer>
+<hr>
+  <div id="socials">
+    <div class="container">
+		  <div class="row">
+			  <div class="socials-left">
+				  <h2>Socials</h2>
+				  <div class="social-icons">
+					  <a href="https://linkedin.com/in/travisgottwaldt" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+					  <a href="https://medium.com/@trav.gottwaldt" target="_blank"><i class="fab fa-medium"></i> Medium</a>
+					  <a href="https://github.com/travis-goodfella" target="_blank"><i class="fab fa-github"></i> Github</a>
+				  </div>
+			  </div>
+			  <div class="contact-right">
+				  <h2>Contact Me</h2>
+				  <p><i class="fas fa-envelope"></i> travgottwaldt@gmail.com</p>
+				  <a href="files/Gottwaldt_Travis_PTCC.pdf" download class="btn">Download CV</a>
+			  </div>
+		  </div>
+	  </div>
+  </div>  
+ </footer>
+ 
+ 
+<!------------------------------------scripts---------------------->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+    function toggleSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section.style.display === "none" || section.style.display === "") {
+            section.style.display = "block";
+        } else {
+            section.style.display = "none";
+        }
+    }
+	
+
+</script>
+
+</body>
+</html>

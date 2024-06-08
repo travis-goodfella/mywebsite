@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travis G | About Me</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<!------------- nav ------------>
+<div class="container">
+	<div class="nav">
+		<a href="index.html">Home</a>
+		<a href="about.html">About Me</a>
+		<a href="projects.html">Projects</a>			
+	</div> 
+</div>
+<hr>
+
+<!-----------about-------------->
+
+<div id="about">
+	<div class="container">
+		<div class="row">
+		  <div class="about-col-1">
+				<img src="images/profile-pic.png" alt="Image Error">
+			</div>
+			<div class="about-col-2">
+				<h1 class="sub-title">About Me</h1>
+				<p>I am focused on pursuing a SOC Analyst position, I've developed practical experience through the labs on letsdefend and tryhackme, where I utilized SIEM tools to investigate security incidents, manage logs, and perform endpoint detection and response. These labs gave me experience in analyzing alerts, identifying malicious activities, and implementing security measures to mitigate risks. I competed in the Collegiate Cyber Defense Competition for 2 years as a firewall administrator on Palo Alto firewalls, achieving 3rd place in the state in 2023 and 1st place in 2024. As a firewall administrator, I gained practical experience in implementing port/application-based security policies to protect against potential threats. I have basic skills in Active Directory management, including user and group administration, permissions management, and domain controller setup. I've assisted with diagnosing computer issues, documenting production using Microsoft excel, and logging machine maintenance records. I’m familiar with a variety of operating systems, spanning from Windows Server 2019, Kali Linux, and Mac OS. Additionally, I have hands on experience in building custom desktop computers.</p>
+				
+				<div class="tab-titles">
+					<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+					<p class="tab-links" onclick="opentab('experience')">Experience</p>
+					<p class="tab-links" onclick="opentab('achievments')">Achievments</p>
+					<p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+					<p class="tab-links" onclick="opentab('education')">Education</p>
+				</div>
+				<div class="tab-contents active-tab" id="skills">
+					<ul>
+						<li>Firewall Administration</li>        
+						<li>Palo Alto</li>
+						<li>PfSense</li>
+						<li>SIEM (Security Information and Event Management)</li>
+						<li>Log Management</li>
+						<li>Endpoint Detection and Response</li>
+						<li>Virtual Box</li>
+						<li>Linux</li>
+						<li>Wireshark</li>
+						<li>Python</li>
+						<li>HTML</li>
+						<li>Active Directory</li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="experience">
+					<h3>Collegiate Cyber Defense Competition</h3>
+					<p>Firewall Administrator<br>October 2022 - March 2024</p>
+					<ul>
+						<li>Responsible for firewall configuration with multiple subnets.</li>
+						<li>Implemented port/application-based security policies for each zone.</li>
+						<li>Monitored traffic logs for suspicious activity.</li>
+						<li>Documented firewall configurations, policies, and procedures for reference.</li>
+					</ul>
+
+					<h3>Federal Cartridge - Anoka, MN</h3>
+					<p>Mechanical Adjuster<br>September 2020 - March 2021</p>
+					<ul>
+						<li>Documented any maintenance requirements on machines throughout the department.</li>
+						<li>Set up packing machines for shotgun shells.</li>
+						<li>Tracked deadlines for each job and planned work orders accordingly.</li>
+						<li>Conducted final inspections of shotgun shells before shipment.</li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="achievments">
+					<ul>
+					  <li>Phi Theta Kappa Honors Society</li> 
+						<li>2024 Midwest Regional Collegiate Cyber Defense Competition - 5th Place</li> 
+						<li>2024 Minnesota Collegiate Cyber Defense Competition - 1st Place</li> 
+						<li>2023 Minnesota Collegiate Cyber Defense Competition - 3rd Place</li> 
+						</ul>
+				</div>
+				<div class="tab-contents" id="certifications">
+					<ul>
+						<li> CompTIA A+</li> 
+					</ul>
+				</div>
+				<div class="tab-contents" id="education">
+					<h3>A.A.S in Cyber Security - Pine Technical and Community College</h3>
+					<p>August 2022 - May 2024</p>
+					<h3>CNC Machinist Diploma - Anoka Technical College</h3>
+					<p>January 2016 - January 2017</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!---------------------------contact----------------------------->
+<footer>
+<hr>
+  <div id="socials">
+    <div class="container">
+		  <div class="row">
+			  <div class="socials-left">
+				  <h2>Socials</h2>
+				  <div class="social-icons">
+					  <a href="https://linkedin.com/in/travisgottwaldt" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+					  <a href="https://medium.com/@trav.gottwaldt" target="_blank"><i class="fab fa-medium"></i> Medium</a>
+					  <a href="https://github.com/travis-goodfella" target="_blank"><i class="fab fa-github"></i> Github</a>
+				  </div>
+			  </div>
+			  <div class="contact-right">
+				  <h2>Contact Me</h2>
+				  <p><i class="fas fa-envelope"></i> travgottwaldt@gmail.com</p>
+				  <a href="files/Gottwaldt_Travis_PTCC.pdf" download class="btn">Download CV</a>
+			  </div>
+		  </div>
+	  </div>
+  </div>  
+ </footer>
+
+ <!------------------------------------scripts---------------------->
+ 
+<script>
+
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+	
+	function opentab(tabname){
+		for(tablink of tablinks){
+		tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+		tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab")
+	}
+
+</script>
+
+</body>
+</html>
