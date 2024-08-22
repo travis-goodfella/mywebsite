@@ -110,7 +110,7 @@ footer {
  }
  .home-col-2{
 	 padding: 20px 0;
-	 flex-basis: 58%;
+	 flex-basis: 52%;
  }	
 .signature {
     margin-top: 10px;
@@ -493,5 +493,88 @@ footer {
     }
     .btn {
         padding: 6px 12px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 500px) {
+	.nav a {
+        font-size: 14px;
+        margin: 3px;
+    }
+	h2{
+	 font-size: 16px;
+	 margin-top: 8px;
+ }
+   h3{
+	 font-size: 14px;
+	 margin-top: 20px;
+	 margin-bottom: 5px;
+ }
+    .header-text h1 {
+        font-size: 14px;
+        margin: 10px;
+    }
+    .header-text p {
+        font-size: 12px;
+    }
+	.home-col-1 img{
+	 max-width: 50px;
+	 max-height: 50px;
+	}	
+	.signature {
+    margin-top: 10px;
+    font-style: italic;
+	}
+    .intro-container {
+		padding: 12px;
+		max-width: 200px;
+		text-align: left;
+	}
+    .about-col-1 img {
+        width: 75%;
+        height: auto;
+    }
+	p {
+	font-size:12px;
+	}
+	.sub-title{
+	 font-size: 20px;
+	 font-weight: 600;
+	}
+    .about-col-2 {
+        font-size: 12px;
+    }
+    .tab-links {
+		margin: 6px 3px;
+        font-size: 14px;
+    }
+    .project-col-1 {
+        flex-basis: 30%;
+    }
+	.project-col-2{
+	 flex-basis: 60%;
+    }
+
+	.project-col-2 img{
+	 border-radius: 20px;
+	 width: 150px;
+	 height: auto;
+	 padding: 5px;
+	}
+
+    .socials-left, .contact-right {
+        flex-basis: auto;
+        text-align: left;
+    }
+    .social-icons i, .contact-right i {
+        font-size: 14px;
+    }
+    .contact-right a, .socials-left a {
+        font-size: 12px;
+        margin: 3px;
+    }
+    .btn {
+        padding: 4px 8px;
     }
 }
