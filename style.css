@@ -94,12 +94,12 @@ footer {
 	}
 	
 .intro-container {
-    padding: 60px;
+    padding: 50px;
     max-width: 700px;
     text-align: left;
 }
 .home-col-1{
-	 flex-basis: 32%;
+	 flex-basis: 35%;
 	 margin-top: 50px;
 	 margin-left: 50px;
  }
@@ -110,7 +110,7 @@ footer {
  }
  .home-col-2{
 	 padding: 20px 0;
-	 flex-basis: 52%;
+	 flex-basis: 60%;
  }	
 .signature {
     margin-top: 10px;
@@ -198,14 +198,14 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two columns */
   grid-template-rows: 1fr 1fr; /* Two rows */
-  gap: 20px;
+  gap: 5px;
 }
 
 .project-col-2 img {
   border-radius: 20px;
-  width: 100%; /* Responsive width */
+  width: 85%; 
   height: auto;
-  padding: 10px;
+  padding: 5px;
   object-fit: cover;
 }
 
