@@ -190,7 +190,6 @@ footer {
 
 .project-col-1 {
   flex-basis: 35%;
-  font-size: 20px;
 }
 
 .project-col-2 {
@@ -203,7 +202,7 @@ footer {
 
 .project-col-2 img {
   border-radius: 20px;
-  width: 85%; 
+  width: 90%; 
   height: auto;
   padding: 5px;
   object-fit: cover;
